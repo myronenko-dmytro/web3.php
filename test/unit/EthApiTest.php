@@ -349,7 +349,6 @@ class EthApiTest extends TestCase
      */    
     public function testSendRawTransaction()
     {
-        $this->markTestSkipped('check this test, currently is not working');
         $eth = $this->eth;
 
         $eth->sendRawTransaction('0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675', function ($err, $transaction) {
@@ -518,8 +517,6 @@ class EthApiTest extends TestCase
      */    
     public function testGetUncleByBlockHashAndIndex()
     {
-        $this->markTestSkipped('check this test, currently is not working');
-
         $eth = $this->eth;
 
         $eth->getUncleByBlockHashAndIndex('0xb903239f8543d04b5dc1ba6579132b143087c68db1b2168786408fcbce568238', '0x0', function ($err, $uncle) {
@@ -537,8 +534,6 @@ class EthApiTest extends TestCase
      */    
     public function testGetUncleByBlockNumberAndIndex()
     {
-        $this->markTestSkipped('check this test, currently is not working');
-
         $eth = $this->eth;
 
         $eth->getUncleByBlockNumberAndIndex('0xe8', '0x0', function ($err, $uncle) {
@@ -730,7 +725,6 @@ class EthApiTest extends TestCase
      */    
     public function testFeeHistory()
     {
-        $this->markTestSkipped('check this test, currently is not working');
         $eth = $this->eth;
 
         $eth->feeHistory(1, 'latest', [ 1, 40, 50 ], function ($err, $feeHistory) {
